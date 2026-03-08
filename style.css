@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(120deg, #c19a6b, #d2b48c, #f5deb3);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited { color: white; }
+a:hover { color: #ffd700; }
+
+ul { list-style: none; padding: 0; margin: 0; }
+
+.container {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -70px;
+}
+
+@media (min-width: 780px) { .container { width: 760px; } }
+@media (min-width: 992px) { .container { width: 970px; } }
+@media (min-width: 1170px) { .container { width: 1170px; } }
+
+.landing-page header {
+  min-height: 80px;
+  display: flex;
+}
+
+.landing-page header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.landing-page header .links {
+  display: flex;
+  align-items: center;
+}
+
+.landing-page header .links li {
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+  flex-shrink: 0;
+}
+
+.landing-page header .links li:last-child {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #8b4513;
+}
+
+.landing-page .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+  min-height: calc(100vh - 80px);
+}
+
+@media (max-width: 767px) {
+  .landing-page .content .container {
+    gap: 20px;
+    min-height: calc(100vh - 101px);
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .landing-page .content .info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.landing-page .content .info h1 {
+  color: #4b2e2e;
+  font-size: 30px;
+}
+
+.landing-page .content .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #3e2b2b;
+}
+
+.landing-page .content .info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #8b4513;
+}
+
+.landing-page .content .image img {
+  max-width: 130%;
+  margin-top: 50px;
+  margin-left: 50px;
+}
